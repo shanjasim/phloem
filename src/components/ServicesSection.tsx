@@ -90,21 +90,6 @@ const ServicesSection = () => {
     }
   ];
 
-  const serviceHighlights = [
-    {
-      title: "Customized Diet Plans",
-      image: "/src/assets/DIET.jpg", // Updated image path
-    },
-    {
-      title: "Lifestyle Guidance",
-      image: "/src/assets/lifestyle.png", // Updated image path
-    },
-    {
-      title: "1:1 Doctor Consultations",
-      image: "/src/assets/doctor.jpg", // Updated image path
-    },
-  ];
-
   const openProgramDetails = (program: any) => {
     setSelectedProgram(program);
     setIsDialogOpen(true);
@@ -122,26 +107,6 @@ const ServicesSection = () => {
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Personalized Care for Every Need
             </p>
-            <div className="flex flex-wrap justify-center gap-8 mt-10">
-              {serviceHighlights.map((item, index) => (
-                <motion.div 
-                  key={index} 
-                  className="flex flex-col items-center text-center max-w-[240px] p-6 bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
-                    className="w-32 h-32 object-cover rounded-full mb-5 transform hover:scale-105 transition-transform duration-300"
-                  />
-                  <h4 className="text-xl font-semibold text-gray-900">
-                    {item.title}
-                  </h4>
-                </motion.div>
-              ))}
-            </div>
           </div>
 
           {/* Condition-Focused Plans */}
