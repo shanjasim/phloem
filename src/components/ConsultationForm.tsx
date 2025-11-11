@@ -26,7 +26,7 @@ const ConsultationForm = () => {
   const onSubmit = async (data: ConsultationFormData) => {
     setIsSubmitting(true);
     
-    const whatsappNumber = "92503 46889";
+    const whatsappNumber = "9250346889";
     const message = `Hello Phloem,\nMy name is ${data.fullName}.\nMy WhatsApp number is ${data.whatsapp}.\nMy primary health concern is ${data.healthConcern}.\nI would like to book a free consultation.`;
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
