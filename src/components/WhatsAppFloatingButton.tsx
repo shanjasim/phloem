@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import WhatsAppIcon from '@/assets/WhatsApp.png';
 
 const WhatsAppFloatingButton: React.FC = () => {
-  const whatsappNumber = "9645589165";
+  const whatsappNumber = "919250346889";
   const genericMessage = encodeURIComponent("Hello, I'd like to chat about your services.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${genericMessage}`;
 
